@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Track & Field</title>
+  <link rel="stylesheet" href="home.css">
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+  <link rel="icon" href="image/bxsci.png">
+
+  <style>
+    .background{
+      background-image: url("image/girls.jpg");
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="menu">
+    <ul>
+      <li id="name"><a href="index.html">BRONX SCIENCE TRACK</a></li>
+      <li class="line last"><a href="donate.html">DONATE</a></li>
+      <li class="line"><a href="workouts.html">WORKOUTS</a></li> 
+      <li class="line"><a href="tryouts.html">TRYOUTS/MEETS</a></li> 
+      <li class="line"><a href="boys.html">BOYS</a></li>
+      <li class="line" id="page"><a href="index.html">GIRLS</a></li>
+    </ul>
+  </nav>
+  <div class="background"></div>
+
+  <div class="seasons" id="practice">
+    <img src="image/gpractice.jpg">
+    <div>
+      <h1>PRACTICES</h1>
+      <h2>September - May/June</h2>
+      <p>WHERE DO WE MEET: Girl's locker room (basement) to change<br>
+        WHERE ARE PRACTICES:  <a href="tryouts.html#directions">Van Cortlandt Park</a>, <a href="tryouts.html#directions">New Balance Armory</a>, <a href="tryouts.html#directions">Clinton Track</a>, at school<br>
+      WHEN ARE PRACTICES: 3:30PM - 6PM (after SGI)<br>
+      REMEMBER:<br>
+        &emsp;&emsp;Water<br>
+        &emsp;&emsp;Snacks<br>
+        &emsp;&emsp;Light running clothes when it's warm<br>
+        &emsp;&emsp;Layers when it's cold</p>
+    </div>
+  </div>
+
+  <div class="seasons" id="preseason">
+    <img src="image/gpreseason.jpg">
+    <div>
+      <h1>PRESEASON</h1>
+      <h2>late August</h2>
+      <p>PRACTICE: <a href="tryouts.html#directions">Van Cortlandt Park</a> <br>
+        WHERE SPECIFICALLY AT VCP DO WE MEET: Tortoise & Hare statue, tennis court, VCP track (rarely)<br>
+        WHEN ARE PRACTICES: Weekdays and weekends<br>
+        REMEMBER:<br>
+          &emsp;&emsp;Be on the lookout for details<br>
+          &emsp;&emsp;Medical form is needed to attend<br>
+          &emsp;&emsp;Make sure to run on your own!<br></p>
+    </div>
+  </div>
+
+  <div class="seasons" id="xc">
+    <img src="image/gxc.jpg">
+    <div>
+      <h1>CROSS COUNTRY</h1>
+      <h2>September - November</h2>
+      <h3><a href="http://www.psal.org/sports/sport.aspx?spCode=033&flag=All">SCHEDULE</a> / <a href="http://www.psal.org/profiles/team-profile.aspx#034/10501">PSAL TEAM PAGE</a></h3>
+      <p> PRACTICE: <a href="tryouts.html#directions">Van Cortlandt Park</a>, <a href="tryouts.html#directions">Clinton Track</a> <br>
+          WHERE ARE MEETS: Van Cortlandt Park<br>
+          WHEN ARE MEETS: One weekday and one weekend <br>
+          EVENTS: <br>
+          &emsp;&emsp;<u>Freshmen:</u> 1.5 miles <br>
+          &emsp;&emsp;<u>Sophomores:</u> 2.5 miles & 5K <br>
+          &emsp;&emsp;<u>Juniors/Seniors:</u> 5K (3.1 miles)<br>
+      </p>
+    </div>
+  </div>
+
+  <div class="seasons" id="indoor">
+    <img src="image/gindoor.jpg">
+    <div>
+    <h1>INDOOR TRACK</h1>
+    <h2>November - March</h2>
+    <h3><a href="http://www.psal.org/sports/sport.aspx?spCode=035&flag=All">SCHEDULE</a> / <a href="http://www.psal.org/profiles/team-profile.aspx#032/10501">PSAL TEAM PAGE</a></h3>
+    <p> PRACTICE: New Balance Armory, at school <br>
+        WHERE ARE MEETS: <a href="tryouts.html#directions">New Balance Armory</a> <br>
+        WHEN ARE MEETS: Weekends <br>
+        EVENTS: <br>
+        &emsp;&emsp;<u>Sprints:</u> 55m, 55m hurdles, 300m, 600m <br>
+        &emsp;&emsp;<u>Distance:</u> 1000m, 1500m, 1500m racewalk, 3000m <br>
+        &emsp;&emsp;<u>Field:</u> High jump, long jump, triple jump, shot put, weight throw, pole vault <br>
+        &emsp;&emsp;<u>Relays:</u> 4x200m, 4x400m, 4x800m
+    </p>
+    </div>
+  </div>
+
+  <div class="seasons" id="outdoor">
+    <img src="image/goutdoor.jpg">
+    <div>
+    <h1>OUTDOOR TRACK</h1>
+    <h2>March - May/June</h2>
+    <h3><a href="http://www.psal.org/sports/sport.aspx?spCode=030&flag=All">SCHEDULE</a> / <a href="http://www.psal.org/profiles/team-profile.aspx#031/10501">PSAL TEAM PAGE</a></h3>
+    <p> PRACTICE: Clinton Track, Van Cortlandt Park Track, at school<br>
+        WHERE ARE MEETS: <a href="tryouts.html#directions">Clinton Track</a>, <a href="tryouts.html#directions">Icahn Stadium</a>, <a href="tryouts.html#directions">Ocean Breeze</a>, <a href="tryouts.html#directions">Jamaica High School</a><br>
+        WHEN ARE MEETS: One weekday and one weekend <br>
+        EVENTS: <br>
+        &emsp;&emsp;<u>Sprints:</u> 100m, 100m hurdles, 200m, 400m, 600m <br>
+        &emsp;&emsp;<u>Distance:</u> 800m, 1500m, 1500m racewalk, 3000m, 2000m/ 3000m steeplechase<br>
+        &emsp;&emsp;<u>Field:</u> High jump, long jump, triple jump, shot put, discus, pole vault, javelin, pentathlon<br>
+        &emsp;&emsp;<u>Relays:</u> 4x100m, 4x400m, 4x800m
+    </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

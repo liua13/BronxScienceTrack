@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Track & Field</title>
+  <link rel="stylesheet" href="home.css">
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+  <link rel="icon" href="image/bxsci.png">
+  
+  <style>
+    .background{
+        background-image: url("image/tryouts.jpg");
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="menu">
+    <ul>
+      <li id="name"><a href="index.html">BRONX SCIENCE TRACK</a></li>
+      <li class="line last"><a href="donate.html">DONATE</a></li>
+      <li class="line"><a href="workouts.html">WORKOUTS</a></li> 
+      <li class="line" id="page"><a href="tryouts.html">TRYOUTS/MEETS</a></li> 
+      <li class="line"><a href="boys.html">BOYS</a></li>
+      <li class="line"><a href="index.html">GIRLS</a></li>
+    </ul>
+  </nav>
+  <div class="background"></div>
+
+  <div class="tryoutsmeets" id="whattobring">
+    <div>
+      <h1>&emsp;TRYOUTS</h1>
+      <ul>
+        <li> <a href="https://www.bxscience.edu/ourpages/auto/2009/11/10/33256056/PSALSportsExamform.pdf">Medical form</a></li>
+        <li> <a href="https://www.bxscience.edu/ourpages/auto/2009/11/10/48627373/PSAL%20Interscholastic%20Athletics%20Parental%20Consent%20Form%200812.pdf">Parental consent form</a></li>
+        <li> Running clothes</li>
+        <li> Good pair of sneakers</li>
+        <li> Warmups/layers (if it's cold)</li>
+        <li> Water</li>
+        <li> Snacks</li>
+      </ul>
+    </div>
+
+    <div>
+      <h1>&emsp;MEETS</h1>
+      <ul>
+        <li> <a href="https://secure.educationalnetworks.net/apps/s/index.jsp?ech=www.bxscience.edu&s=1187">Uniform</a></li>
+        <li> Sneakers or spikes</li>
+        <li> PSAL bib</li>
+        <li> Warmups/layers (if it's cold)</li>
+        <li> Water & Gatorade</li>
+        <li> Snacks</li>
+        <li> Take off jewelry!</li>
+      </ul>
+    </div>
+
+    <div id="qs">
+      <h1>QUALIFYING STANDARDS</h1>
+      <p>
+        <u>Cross Country:</u> Top 3 teams & top 20 individuals in the city<br><br>
+        <u>Indoor & Outdoor Track:</u> Search up "track qualifying standards" on <a href="http://www.psal.org">PSAL</a> 
+      </p>
+    </div>
+  </div>
+
+  <div class="tryoutsmeets" id="directions">
+    <h1 id="headdirection">DIRECTIONS</h1>
+
+    <div>
+      <h3>VAN CORTLANDT PARK</h3>
+      <h2>ADDRESS: <a href="https://www.google.com/maps/place/Tortoise+%26+Hare/@40.8941853,-73.898936,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f3aeeea22cab:0xfc0dd7a9363b243c!8m2!3d40.8941853!4d-73.8967473">6115 Broadway, The Bronx, NY 10471</a></h2>
+      <p>Take the 1 train to the last stop. Walk along Broadway, with the park to your right. During meets, you should see a tent or tarp set up before you reach the tortoise and hare statue.</p>
+    </div>
+
+    <div>
+      <h3>JAMAICA HIGH SCHOOL TRACK</a></h3>
+      <h2>ADDRESS: <a href="https://www.google.com/maps/place/Jamaica+High+School/@40.7144332,-73.8004464,17z/data=!3m1!4b1!4m5!3m4!1s0x89c260e3d3689463:0x5bf0c3991dc631d1!8m2!3d40.7144332!4d-73.7982524">167-01 Gothic Dr, Jamaica, NY 11432</a></h2>
+      <p>Take the F to 169th Street and walk along 168th Street to reach the school. Alternatively, take the Q31 or Q65.</p>
+    </div>
+
+    <div>
+      <h3>NEW BALANCE ARMORY</a></h3>
+      <h2>ADDRESS: <a href="https://www.google.com/maps/place/New+Balance+Track+and+Field+Center/@40.8423908,-73.9440957,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f69c0e43ab2d:0xc7a79f1a99e473cc!8m2!3d40.8423908!4d-73.941907">216 Fort Washington Avenue, New York, NY 10032</a></h2>
+      <p>Take the 1, A, or C to 168 Street/Fort Washington Avenue and walk along the Armory's red brick wall. Drop your stuff on the benches on the 4th floor. Bathrooms are on the 2nd and 3rd floors.</p>
+    </div>
+
+    <div>
+      <h3>CLINTON TRACK</a></h3>
+      <h2>ADDRESS: <a href="https://www.google.com/maps/place/DeWitt+Clinton+High+School/@40.881324,-73.889601,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f30ac9374f97:0x3c17ddefdc98eab7!8m2!3d40.881324!4d-73.887407">100 W Mosholu Pkwy S, The Bronx, NY 10468</a></h2>
+      <p>Turn left after exiting Bronx Science and turn left again after reaching the corner. The track should be to your left. Alternatively, take the 4 train to Mosholu Parkway (one stop after Bedford Park Blvd-Lehman College), turn right, and walk straight to the track.</p>
+    </div>
+
+    <div>
+      <h3>ICAHN STADIUM</a></h3>
+      <h2>ADDRESS: <a href="https://www.google.com/maps/place/Icahn+Stadium/@40.7929773,-73.9266063,17z/data=!3m1!4b1!4m5!3m4!1s0x89c2f5efdf5c531f:0x4c25a47ed515c9f2!8m2!3d40.7929773!4d-73.9244123">20 Randalls Island, New York, NY 10035</a></h2>
+      <p>Take the 4,5,6 to 125th Street and then take the M35 to Main Ryd, which is the third stop of Randalls Island. The bus should drop you right outside of Icahn Stadium. If you're coming from the west side, take the 2, 3, A, B, C, or D to 125th Street; either walk east to the M35 or take another bus. Follow other track kids (look out for duffel bags!) if you get lost or don't know which bus stop to get off.</p>
+    </div>
+
+    <div>
+      <h3>OCEAN BREEZE ATHLETIC COMPLEX</a></h3>
+      <h2>ADDRESS: <a href="https://www.google.com/maps/place/Ocean+Breeze+Athletic+Complex/@40.5831074,-74.0773423,17z/data=!3m1!4b1!4m5!3m4!1s0x89c24f27074d6c47:0xd85d76774a068736!8m2!3d40.5831074!4d-74.0751483">625 Father Capodanno Blvd, Staten Island, NY 10305</a></h2>
+      <p>Take the R or W to Whitehall Street, the 4 or 5 to Bowling Green, or take trains to Atlantic Avenue and head back uptown to either station. Walk to and take the Staten Island Ferry (comes every 30 minutes) from either station to St. George Ferry Terminal. Take the S51 to Father Capodanno Blvd/Atlantic Ave, which is the first non-house stop. Ocean Breeze should be right ahead. </p>
+    </div>
+  </div>
+
+</body>
+
+</html>

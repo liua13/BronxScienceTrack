@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Track & Field</title>
+  <link rel="stylesheet" href="home.css">
+  <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-firestore.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Roboto+Condensed" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Slabo+27px&display=swap" rel="stylesheet">
+  <link rel="icon" href="image/bxsci.png">
+  
+  <style>
+    .background{
+        background-image: url("image/workouts.jpg");
+    }
+  </style>
+</head>
+
+<body>
+  <nav id="menu">
+    <ul>
+      <li id="name"><a href="index.html">BRONX SCIENCE TRACK</a></li>
+      <li class="line last"><a href="donate.html">DONATE</a></li>
+      <li class="line" id="page"><a href="workouts.html">WORKOUTS</a></li> 
+      <li class="line"><a href="tryouts.html">TRYOUTS/MEETS</a></li> 
+      <li class="line"><a href="boys.html">BOYS</a></li>
+      <li class="line"><a href="index.html">GIRLS</a></li>
+    </ul>
+  </nav>
+  <div class="background"></div>
+
+  <div class="workoutlist" id="workouts">
+    <h1>&emsp;WORKOUTS</h1>
+    <ul>
+        <p><u>BASE RUN:</u> Run at natural pace to build up aerobic capacity.<br><br>
+          <u>PROGRESSION RUN:</u> Start running at natural pace and get progressively faster the longer you run. This is meant to improve your running stamina.<br><br>
+          <u>FARTLEK:</u> Similar to interval running, but less structured and intense. Speed up for a short period of time, then slowing down to recover before speeding up again. Repeat.<br><br>
+          <u>INTERVAL RUNNING:</u> Alternate between short bursts of fast runs and longer periods of jogging of moderate intensity to recover.<br><br>
+          <u>TEMPO RUN:</u> Run at a comfortably hard pace that you can maintain for long periods of time. This is meant to increase your threshold for lactic acid accumulation and help you run longer without your muscles fatiguing.<br><br>
+          <u>HILL REPEAT:</u> Start at the bottom of a hill and sprint up to the top to build endurance.<br><br>
+          <u>SPRINT:</u> Run at a fast pace for a short period of time to build power and muscular strength.</p>
+      </ul>
+  </div>
+
+  <div class="workoutlist" id="intensity">
+    <h1>&emsp;INTENSITY</h1>
+    <ul>
+      <p><u>COOL-DOWN:</u> 30%-50%<br><br>
+          <u>LOW INTENSITY:</u> 50%-60%<br><br>
+          <u>MODERATE INTENSITY:</u> 60%-70%<br><br>
+          <u>HIGH INTENSITY:</u> 70%-90%<br><br>
+          <u>RACE PACE:</u> Give it your all but be thoughtful about pacing, especially for longer distances.</p>
+      </ul>
+  </div>
+</body>
+
+</html>

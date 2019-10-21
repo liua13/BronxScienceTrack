@@ -1,0 +1,194 @@
+body{
+	width:100%;
+	height:100%;
+	font-size: 20px;
+	margin: 0em;
+	padding: 0em;
+	text-decoration:none;
+	text-align: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	text-decoration:none;
+	list-style-type: none;
+}
+
+#menu a{
+	color: white;
+}
+
+.background{
+	margin-top:80px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height:600px;
+}
+
+.change{
+	background-color: #6D92BF;
+}
+
+#menu {
+	position: fixed;
+	width: 100%;
+	z-index: 100;
+	background-color: green;
+	padding-bottom: 15px;
+}
+
+#menu li:not(#name){
+	font-family: 'Roboto Condensed', sans-serif;
+	float: right;
+	margin: 15px 25px 0px 0px;
+}
+
+#menu a.last{
+	margin: 0px 25px 0px 0px;
+}
+
+#name{
+	font-family: 'Oswald', sans-serif;
+	font-size: 35px;
+	float: left;
+	margin: 0px 0px 1px 0px;
+}
+
+.line:after{
+	content: '';
+    display: block;
+    width: 0;
+    height: 0.05em;
+    background: white;
+    transition: width .5s;
+}
+
+.line a:hover{
+	text-decoration: none;
+}
+
+.line:hover:after{
+	width: 100%;
+}
+
+#page a{
+	color: yellow;
+}
+
+#page:after{
+	background: yellow;
+}
+
+div.seasons:not(#practice), div.tryoutsmeets:not(#whattobring){
+	border-top: 1px solid black;
+}
+
+div.seasons div{
+	display: inline-block;
+	width:60%;
+	margin: 30px 1% 50px 1%;
+}
+
+div.seasons img{
+	display:inline-block;
+	width: 250px;
+	height:175px;
+	margin:20px 3% 20px 3%;
+}
+
+div p{
+	text-align: justify;
+	margin: 5px 10px 10px 0px;
+	font-family: 'Slabo 27px', serif;
+}
+
+h1{
+	font-size: 2em;
+	margin: 0px 0px 0px 0px;
+}
+
+
+h2{
+	margin: 0 0 25px 0;
+	font-style: italic;
+	font-size: 1.1em;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+/* tryouts page */
+#whattobring ul li:before {
+ 	content: '✓';
+}
+
+#whattobring div {
+	width:300px;
+	display:inline-block;
+	margin: 3% 1% 3% 1%;
+}
+
+#qs h1{
+	margin-bottom: 20px;
+}
+
+#directions h1{
+	margin-top: 30px;
+}
+
+#directions div{
+	width:300px;
+	display:inline-block;
+	margin: 3% 3% 3% 3%;
+}
+
+.workoutlist{
+	width:100%;
+	margin:auto;
+}
+
+.workoutlist ul{
+	text-align: justify;
+	padding:1% 10% 1% 10%;
+}
+
+#workouts, #intensity{
+	padding: 40px 0px 40px 0px;
+}
+
+#intensity{
+	border-top: 1px solid black;
+}
+
+#donations{
+	margin: 40px 0px 40px 0px;
+	width:100%;
+}
+
+#donations div{
+	display:inline-block;
+	text-align: center;
+	margin: 10px 0 0 0;
+	padding: 10px;
+}
+
+#left{
+	width:308px;
+}
+
+#right{
+	width:176px;
+	border: 1px solid black;
+}
+
+#right p{
+	text-align: center;
+}
